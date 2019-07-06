@@ -1,0 +1,615 @@
+@font-face {
+    font-family: 'Shabnam';
+    src: url('fonts/Shabnam.eot');
+    src: url('fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Shabnam.woff') format('woff'),
+        url('fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    direction: rtl;
+    font-family: 'Shabnam' !important;
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-right: 0px;
+    padding-left: 1.5625rem;
+}
+
+.nested-sidebar {
+    background: url(images/bg-sidebar.png) no-repeat center center;
+    /* background: url(images/bg-sidebar1.png) no-repeat center center; */
+    background-color: white;
+    height: 100%;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard {
+    position: absolute;
+    left: 0px;
+}
+
+.padding-top {
+    padding-top: 1.5rem;
+}
+
+.padding-bottom {
+    padding-bottom: 1.5rem;
+}
+
+.statistics-box {
+    height: 124px;
+    transition: ease all .7s;
+}
+
+.rounded {
+    border-radius: 6px !important;
+}
+
+.section {
+    background-color: white;
+    height: 100%;
+    padding: 0px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.panel {
+    height: 30.625em;
+    transition: ease all .7s;
+}
+
+.chart {
+    height: 30.625em;
+    transition: ease all .7s;
+}
+
+.ticket {
+    height: 33.5em;
+    transition: ease all .7s;
+}
+
+.encyclopedia {
+    height: 33.5em;
+    transition: ease all .7s;
+}
+
+.news {
+    height: 33.5em;
+    transition: ease all .7s;
+}
+
+.info-user.info-card::after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#815fe4), to(#5e72e4));
+    background-image: linear-gradient(180deg, #815fe4 0%, #5e72e4 100%);
+}
+
+.info-ticket.info-card::after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fec63b), to(#f19b1b));
+    background-image: linear-gradient(180deg, #fec63b 0%, #f19b1b 100%);
+}
+
+.info-edu.info-card::after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ee6d78), to(#ec1c26));
+    background-image: linear-gradient(180deg, #ee6d78 0%, #ec1c26 100%);
+
+}
+
+.info-News.info-card::after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#39eedf), to(#3b4efe));
+    background-image: linear-gradient(180deg, #39eedf 0%, #3b4efe 100%);
+}
+
+.info-card::after {
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 25%;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    position: absolute;
+}
+
+.info-card:hover::after {
+    width: 100%;
+    transition: ease 1s;
+}
+
+.nested-panel {
+    background-image: -moz-linear-gradient(135deg, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+    background-image: -webkit-linear-gradient(135deg, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+    background-image: -ms-linear-gradient(135deg, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+    padding: 30px;
+}
+
+.icon-Statistics-Users {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    color: white;
+    top: 1.2rem;
+    left: 0.3rem;
+}
+
+.icon-Statistics-Tickets {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    color: white;
+    top: 1.2rem;
+    left: 0.3rem;
+}
+
+.icon-Statistics-Encyclopedia {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    color: white;
+    top: 1.2rem;
+    left: 0.3rem;
+
+}
+
+.icon-Statistics-News {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    color: white;
+    top: 1.2rem;
+    left: 0.5rem;
+}
+
+.icon-Vector-Smart-Object3 {
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+
+}
+
+.J {
+    left: 30.5rem;
+
+}
+
+.icon-Vector-Smart-Object21 {
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(173, 173, 192);
+    top: 19.2rem;
+    right: 1rem;
+}
+
+
+.input-group-btn:last-child>.btn {
+    z-index: 0 !important;
+    border: none !important;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    right: -10%;
+}
+
+.Tol {
+    width: 99% !important;
+}
+
+.fa-bell {
+    font-size: 15px;
+    color: #ccc;
+    position: relative;
+    left: -99%;
+}
+
+#comm {
+    font-size: 15px;
+    color: #ccc;
+    position: relative;
+    left: -92%;
+}
+
+.m {
+    position: absolute;
+    top: 40% !important;
+    right: -7%;
+}
+
+.badge {
+    background-color: rgba(236, 18, 73, 0.705) !important;
+
+}
+
+.badge.index {
+    margin-top: -38px !important;
+    margin-left: 25px !important;
+    float: left;
+    margin-bottom: -10px;
+}
+
+.badge.index1 {
+    margin-top: -39px !important;
+    margin-left: 76px !important;
+    float: left;
+    margin-bottom: -10px
+}
+
+.badge.index2 {
+
+    float: left;
+
+}
+
+.Top {
+    position: absolute;
+    bottom: 2%;
+    right: 14%;
+
+}
+
+.Top2 {
+    position: absolute;
+    left: 0rem;
+    top: 1rem;
+}
+
+.navbar-inverse .navbar-form {
+    border-color: #fff !important;
+}
+
+.input-group {
+    width: 27% !important;
+}
+
+.But {
+    float: right;
+    margin-top: -40px;
+    margin-right: 20%;
+}
+
+.fa-search {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-right: 0px;
+    padding-left: 1.5625rem;
+}
+
+.card-img-top {
+    margin-top: 50%;
+}
+
+.card-title.Title {
+    position: absolute;
+    top: 8rem !important;
+    right: 6rem;
+    font-size: 10px;
+
+}
+
+.border1 {
+    border-bottom: 1px solid #0918a0;
+    width: 25% !important;
+
+}
+
+.Color {
+    color: #0918a0 !important;
+    font-family: 'Shabnam' !important;
+
+}
+
+.font {
+    font-size: 0.8rem !important;
+}
+
+.Color1 {
+    color: #ccc;
+    font-size: 12px !important;
+}
+
+.S {
+    position: absolute;
+    top: 30px;
+    font-family: 'shabnam'
+}
+
+ul {
+    list-style: none;
+}
+
+.pic {
+    color: #fff;
+}
+
+.Icon {
+    color: #fff;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-size: 21px;
+    font-weight: 500;
+
+}
+
+.lego {
+    width: 31%;
+    position: absolute;
+    top: -0.3rem;
+    right: 1rem;
+}
+
+.M0 {
+    position: absolute;
+    right: 6rem;
+    top: 0.1rem;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(#eee, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.S0 {
+    position: absolute;
+    right: 2rem;
+    top: 3.5rem;
+    font-size: 0.8rem;
+    background: -webkit-linear-gradient(#eee, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p {
+    font-size: 0.9rem;
+}
+
+.V0 {
+    position: relative;
+    top: 15%;
+    right: 20%;
+}
+
+.btn-link {
+    font-weight: 100;
+    color: #111;
+    background-color: transparent;
+}
+
+.bg-mutd {
+    /* background-color: #e9ecef !important; */
+    background-color: #f5f5f5 !important;
+}
+
+.bg-prim {
+    background-color: #c0ddf8;
+}
+
+.F1 {
+    font-size: 0.5rem !important;
+    font-family: 'Shabnam';
+}
+
+.F2 {
+    font-size: 0.6rem !important;
+    font-family: 'Shabnam';
+}
+
+.F3 {
+    font-size: 0.7rem !important;
+    font-family: 'Shabnam';
+}
+
+.F4 {
+    font-size: 0.7rem;
+    font-family: 'shabnam';
+}
+
+
+.V {
+    position: relative;
+    bottom: 10%;
+}
+
+.ax {
+    width: 15%;
+}
+
+.w0 {
+    width: 35% !important;
+}
+
+.w1 {
+    width: 15% !important;
+}
+
+.w2 {
+    width: 65%;
+}
+
+.w3 {
+    width: 15%;
+}
+
+.w4 {
+    width: 40%;
+}
+
+
+.bg-suc {
+    background-color: #3bfe93;
+}
+
+.bg-second {
+    background-color: #ccc;
+
+}
+
+#comm {
+    font-size: 15px;
+    color: #ccc;
+    position: relative;
+    left: -92%;
+}
+
+@media screen and (max-width: 1024px) {
+    #comm {
+
+        position: relative;
+        left: -90%;
+
+    }
+
+    .fa-bell {
+        font-size: 15px;
+        color: #ccc;
+        position: relative;
+        left: -99%;
+    }
+
+    .M0 {
+        position: absolute;
+        right: 4rem;
+        top: 0.1rem;
+        font-size: 1.5rem;
+        background: -webkit-linear-gradient(#eee, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .S0 {
+        position: absolute;
+        right: 0rem;
+        top: 2.5rem;
+        font-size: 0.7rem;
+        font-size: -21.2rem;
+        background: -webkit-linear-gradient(#eee, rgb(94, 114, 228) 0%, rgb(129, 95, 228) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-img-top {
+        margin-top: 82%;
+    }
+
+    .card-title.Title {
+        position: absolute;
+        top: 8rem !important;
+        right: 5rem;
+        font-size: 7px;
+    }
+
+    .m {
+        position: absolute;
+        top: 23% !important;
+        right: -18%;
+    }
+
+    .font1 {
+        font-size: 0.5rem;
+    }
+
+    .Top {
+        position: absolute;
+        bottom: 2%;
+        right: 14%;
+        font-size: 0.5rem;
+    }
+
+    .icon-Statistics-Encyclopedia {
+        position: absolute;
+        z-index: 1;
+        font-size: 26px;
+        color: white;
+        top: 1.9rem;
+        left: 0.3rem;
+    }
+
+    .icon-Statistics-Users {
+        position: absolute;
+        z-index: 1;
+        font-size: 27px;
+        color: white;
+        top: 1.8rem;
+        left: 0.3rem;
+    }
+
+    .icon-Statistics-Tickets {
+        position: absolute;
+        z-index: 1;
+        font-size: 28px;
+        color: white;
+        top: 1.5rem;
+        left: 0.3rem;
+    }
+
+    .icon-Statistics-News {
+        position: absolute;
+        z-index: 1;
+        font-size: 32px;
+        color: white;
+        top: 1.3rem;
+        left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .padding-top {
+        padding-top: 1.5rem;
+    }
+
+    .padding-bottom {
+        padding-bottom: 1.5rem;
+    }
+
+    .statistics-box {
+        height: 88px;
+    }
+
+    .rounded {
+        border-radius: 4px !important;
+    }
+
+    .panel {
+        height: 347px;
+    }
+
+    .chart {
+        height: 347px;
+    }
+
+    .ticket {
+        height: 380px;
+    }
+
+    .message {
+        height: 380px;
+    }
+
+    .encyclopedia {
+        height: 380px;
+    }
+
+    .news {
+        height: 380px;
+    }
+}
